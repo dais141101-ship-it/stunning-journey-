@@ -1,13 +1,162 @@
 <!DOCTYPE html>
 <html>
-
 <head>
 
 <title>SANGGAR PREMIUM</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+<style>
+
+*{
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+margin:0;
+background:#050014;
+color:white;
+}
+
+
+nav{
+padding:20px;
+text-align:center;
+background:#08001a;
+box-shadow:0 0 20px #ff00ff;
+}
+
+nav h2{
+color:#00ffff;
+font-size:28px;
+text-shadow:0 0 20px cyan;
+}
+
+nav a{
+color:white;
+margin:10px;
+text-decoration:none;
+}
+
+
+
+.hero{
+padding:60px 20px;
+text-align:center;
+}
+
+
+.hero h1{
+font-size:60px;
+margin:0;
+text-shadow:0 0 20px #00ffff;
+}
+
+
+.hero span{
+color:#ff00ff;
+text-shadow:0 0 30px #ff00ff;
+}
+
+
+.hero p{
+font-size:22px;
+color:#ddd;
+}
+
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:50px;
+background:linear-gradient(45deg,#00ffff,#ff00ff);
+color:white;
+font-weight:bold;
+box-shadow:0 0 20px #ff00ff;
+}
+
+
+
+section{
+padding:30px 20px;
+text-align:center;
+}
+
+
+
+.box{
+background:#10052b;
+border:1px solid #00ffff;
+border-radius:20px;
+padding:25px;
+margin:20px auto;
+max-width:900px;
+box-shadow:0 0 20px #00ffff;
+}
+
+
+
+.server{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+
+
+.server div{
+background:#080019;
+padding:20px;
+border-radius:15px;
+border:1px solid #ff00ff;
+box-shadow:0 0 15px #ff00ff;
+width:250px;
+}
+
+
+
+.online{
+color:#00ff88;
+}
+
+
+
+.harga{
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+}
+
+
+
+.card{
+background:#0b0120;
+padding:25px;
+width:250px;
+border-radius:20px;
+border:1px solid cyan;
+box-shadow:0 0 20px cyan;
+}
+
+
+
+.card h1{
+color:#00ffff;
+font-size:45px;
+}
+
+
+
+footer{
+text-align:center;
+padding:30px;
+color:#aaa;
+}
+
+</style>
 
 </head>
 
@@ -17,9 +166,7 @@
 
 <nav>
 
-<h2>
-⚡ SANGGAR PREMIUM
-</h2>
+<h2>⚡ SANGGAR PREMIUM ⚡</h2>
 
 <a href="#server">Server</a>
 <a href="#harga">Harga</a>
@@ -31,18 +178,15 @@
 
 <section class="hero">
 
-
-<div>
-
 <h1>
 SANGGAR<br>
 <span>PREMIUM</span>
 </h1>
 
 
-<h3>
-VPN PREMIUM INDONESIA & SINGAPORE
-</h3>
+<p>
+VPN PREMIUM INDONESIA 🇮🇩 & SINGAPORE 🇸🇬
+</p>
 
 
 <p>
@@ -55,50 +199,45 @@ ORDER SEKARANG
 </button>
 
 
-</div>
-
-
-<div class="shield">
-
-🛡️
-
-</div>
-
-
 </section>
-
 
 
 
 
 <section id="server">
 
-
-<h2>
-STATUS SERVER
-</h2>
+<h2>🌐 STATUS SERVER</h2>
 
 
-<div class="card">
+<div class="server">
 
 
 <div>
-🇮🇩 Indonesia
-<br>
-<span>● ONLINE</span>
+<h3>🇮🇩 Indonesia</h3>
+<p class="online">
+● ONLINE
+</p>
+<p>
+Low Ping<br>
+Speed Premium
+</p>
 </div>
 
 
 
 <div>
-🇸🇬 Singapore
-<br>
-<span>● ONLINE</span>
+<h3>🇸🇬 Singapore</h3>
+<p class="online">
+● ONLINE
+</p>
+<p>
+Fast Route Asia<br>
+Stable Connection
+</p>
 </div>
 
 
 </div>
-
 
 </section>
 
@@ -108,77 +247,102 @@ STATUS SERVER
 
 <section id="harga">
 
-<h2>
-DAFTAR HARGA
-</h2>
+<h2>💎 DAFTAR HARGA</h2>
 
 
-<div class="price">
+<div class="harga">
 
 
-<div>
+<div class="card">
+
 <h3>INDO 7 HARI</h3>
+
 <h1>10K</h1>
+
 <p>
 1 Device<br>
 Low Ping<br>
 Support 24 Jam
 </p>
+
 </div>
 
 
 
-<div>
+
+<div class="card">
+
 <h3>INDO 30 HARI</h3>
+
 <h1>25K</h1>
+
 <p>
-Speed Premium<br>
-Server Stabil
+Server Stabil<br>
+Speed Tinggi
 </p>
+
 </div>
 
 
 
 
-<div>
+<div class="card">
+
 <h3>SG VIP</h3>
+
 <h1>40K</h1>
+
 <p>
 Priority Server<br>
 Unlimited Speed
 </p>
-</div>
 
+</div>
 
 
 </div>
 
 </section>
+
 
 
 
 
 <section id="order">
 
-<h2>
-ORDER
-</h2>
 
+<div class="box">
+
+<h2>📞 ORDER</h2>
+
+<p>
+Hubungi Admin SANGGAR PREMIUM
+</p>
 
 <button>
-WhatsApp
+WHATSAPP
 </button>
 
 
 <button>
-Telegram
+TELEGRAM
 </button>
+
+
+</div>
 
 
 </section>
 
 
 
-</body>
 
+<footer>
+
+© 2026 SANGGAR PREMIUM
+
+</footer>
+
+
+</body>
 </html>
