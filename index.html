@@ -4,91 +4,389 @@
 
 <title>SANGGAR PREMIUM</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
 
-body{
-margin:0;
-background:#03000a;
-color:white;
+*{
+box-sizing:border-box;
 font-family:Arial,sans-serif;
 }
 
-.container{
-padding:20px;
+body{
+
+margin:0;
+
+background:
+radial-gradient(circle at top,#25005c,#030008 60%);
+
+color:white;
+
 }
+
+
+.container{
+
+max-width:1000px;
+margin:auto;
+padding:20px;
+
+}
+
+
+/* LOGO */
+
+.logo{
+
+text-align:center;
+font-size:90px;
+
+filter:
+drop-shadow(0 0 20px cyan)
+drop-shadow(0 0 40px magenta);
+
+animation:
+float 2s infinite alternate;
+
+}
+
+
+
+/* TITLE */
 
 .title{
+
 text-align:center;
-font-size:40px;
-font-weight:bold;
-color:#00ffff;
-text-shadow:0 0 15px cyan,0 0 30px cyan;
-animation:blink 1.5s infinite alternate;
+
+font-size:55px;
+
+font-weight:900;
+
+letter-spacing:3px;
+
+background:
+linear-gradient(
+90deg,
+cyan,
+magenta,
+cyan
+);
+
+background-size:200%;
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:
+move 3s infinite linear,
+glow 1.5s infinite alternate;
+
 }
 
+
+
 .sub{
+
 text-align:center;
+
 font-size:20px;
+
 color:#ddd;
+
 }
+
+
+
+/* MENU */
+
+
+.menu{
+
+display:flex;
+
+justify-content:center;
+
+gap:15px;
+
+flex-wrap:wrap;
+
+margin:25px 0;
+
+}
+
+
+
+.menu a{
+
+padding:12px 25px;
+
+border-radius:50px;
+
+text-decoration:none;
+
+color:white;
+
+border:1px solid cyan;
+
+background:#090019;
+
+box-shadow:
+0 0 15px cyan;
+
+}
+
+
+
+.menu a:hover{
+
+background:
+linear-gradient(45deg,cyan,magenta);
+
+}
+
+
+
+/* CARD */
 
 
 .box{
-background:#090018;
-border:1px solid #ff00ff;
-border-radius:20px;
-padding:20px;
-margin:20px 0;
+
+background:
+rgba(15,0,35,.85);
+
+border-radius:25px;
+
+padding:25px;
+
+margin:25px 0;
+
+border:1px solid magenta;
+
 box-shadow:
-0 0 20px #ff00ff;
+
+0 0 20px magenta;
+
 }
+
+
 
 
 h2{
+
+text-align:center;
+
 color:#ff00ff;
-text-shadow:0 0 15px magenta;
+
+text-shadow:
+
+0 0 15px magenta;
+
 }
+
+
 
 
 .server{
-color:#00ff88;
-font-weight:bold;
+
+display:flex;
+
+justify-content:center;
+
+gap:20px;
+
+flex-wrap:wrap;
+
 }
+
+
+
+.server-card{
+
+width:250px;
+
+padding:20px;
+
+border-radius:20px;
+
+background:#050010;
+
+border:1px solid cyan;
+
+box-shadow:
+
+0 0 20px cyan;
+
+text-align:center;
+
+}
+
+
+
+.online{
+
+color:#00ff88;
+
+font-weight:bold;
+
+}
+
+
+
+/* PRICE */
 
 
 .price{
-font-size:20px;
-line-height:1.8;
+
+display:grid;
+
+grid-template-columns:
+
+repeat(auto-fit,minmax(230px,1fr));
+
+gap:20px;
+
 }
 
 
-b{
-color:#00ffff;
-font-size:22px;
+
+.card{
+
+background:#080018;
+
+padding:25px;
+
+border-radius:20px;
+
+border:1px solid cyan;
+
+box-shadow:
+
+0 0 20px cyan;
+
+text-align:center;
+
 }
 
 
-button{
-padding:15px 30px;
-border:0;
+.card h1{
+
+font-size:45px;
+
+color:cyan;
+
+}
+
+
+
+/* FITUR */
+
+
+ul{
+
+line-height:2;
+
+font-size:18px;
+
+}
+
+
+
+/* BUTTON */
+
+
+.btn{
+
+display:inline-block;
+
+padding:15px 35px;
+
+margin:10px;
+
 border-radius:50px;
-background:linear-gradient(45deg,#00ffff,#ff00ff);
+
+text-decoration:none;
+
 color:white;
+
 font-weight:bold;
-box-shadow:0 0 20px magenta;
+
+background:
+
+linear-gradient(45deg,#00ffff,#ff00ff);
+
+box-shadow:
+
+0 0 25px magenta;
+
 }
 
 
-@keyframes blink{
+
+footer{
+
+text-align:center;
+
+padding:30px;
+
+color:#888;
+
+}
+
+
+
+
+
+@keyframes move{
 
 from{
-opacity:.6;
+
+background-position:0%;
+
 }
 
 to{
-opacity:1;
+
+background-position:200%;
+
+}
+
+}
+
+
+
+@keyframes glow{
+
+from{
+
+filter:
+drop-shadow(0 0 10px cyan);
+
+}
+
+to{
+
+filter:
+drop-shadow(0 0 40px magenta);
+
+}
+
+}
+
+
+
+@keyframes float{
+
+from{
+
+transform:translateY(0);
+
+}
+
+to{
+
+transform:translateY(-15px);
+
 }
 
 }
@@ -105,23 +403,14 @@ opacity:1;
 <div class="container">
 
 
+
 <div class="logo">
 🛡️
 </div>
 
-<h1>
-SANGGAR PREMIUM
-</h1>
 
-
-<div class="menu">
-
-<a href="#server">🌐 Server</a>
-
-<a href="#harga">💎 Harga</a>
-
-<a href="#order">🛒 Order</a>
-
+<div class="title">
+⚡ SANGGAR PREMIUM ⚡
 </div>
 
 
@@ -133,123 +422,176 @@ Fast • Stable • Secure
 
 
 
+<div class="menu">
 
-<div class="box">
+<a href="#server">🌐 Server</a>
+
+<a href="#harga">💎 Harga</a>
+
+<a href="#fitur">🔥 Fitur</a>
+
+<a href="#order">🛒 Order</a>
+
+</div>
+
+
+
+
+
+<div class="box" id="server">
 
 <h2>
 🌐 STATUS SERVER
 </h2>
 
 
-<p>
+<div class="server">
+
+
+<div class="server-card">
+
+<h3>
 🇮🇩 Indonesia
-<br>
-<span class="server">● ONLINE</span>
+</h3>
+
+<p class="online">
+● ONLINE
 </p>
 
-
 <p>
+Low Ping<br>
+Gaming Friendly<br>
+Speed Premium
+</p>
+
+</div>
+
+
+
+<div class="server-card">
+
+<h3>
 🇸🇬 Singapore
-<br>
-<span class="server">● ONLINE</span>
+</h3>
+
+<p class="online">
+● ONLINE
 </p>
-
-
-</div>
-
-
-
-
-
-<div class="box">
-
-<h2>
-💎 DAFTAR HARGA SINGAPORE
-</h2>
-
-
-<div class="price">
-
-
-» 1 Bulan = 1 IP : <b>10K</b><br>
-
-» 1 Bulan = 2 IP : <b>12K</b><br><br>
-
-
-» 2 Bulan = 1 IP : <b>17K</b><br>
-
-» 2 Bulan = 2 IP : <b>20K</b><br><br>
-
-
-» 3 Bulan = 2 IP : <b>30K</b><br>
-
-» 4 Bulan = 2 IP : <b>40K</b><br>
-
-» 1 Tahun = 2 IP : <b>100K</b>
-
-
-</div>
-
-</div>
-
-
-
-
-
-<div class="box">
-
-<h2>
-💎 DAFTAR HARGA INDONESIA
-</h2>
-
-
-<div class="price">
-
-
-» 1 Bulan = 1 IP : <b>13K</b><br>
-
-» 1 Bulan = 2 IP : <b>15K</b><br><br>
-
-
-» 2 Bulan = 1 IP : <b>23K</b><br>
-
-» 2 Bulan = 2 IP : <b>26K</b><br><br>
-
-
-» 3 Bulan = 2 IP : <b>40K</b><br>
-
-» 4 Bulan = 2 IP : <b>42K</b><br>
-
-» 1 Tahun = 2 IP : <b>130K</b>
-
-
-</div>
-
-
-</div>
-
-
-
-
-
-<div class="box">
-
-<h2>
-📢 INFO GARANSI
-</h2>
-
 
 <p>
-✓ 1 IP = 1 pengguna HP
-<br>
-✓ Config siap pakai
-<br>
-✓ Support error
-<br>
-✓ Bisa pindah config
-<br>
-✓ Fast respon admin
+Fast Route Asia<br>
+Streaming Lancar<br>
+Stabil 24 Jam
 </p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="box" id="harga">
+
+<h2>
+💎 DAFTAR HARGA
+</h2>
+
+
+<div class="price">
+
+
+<div class="card">
+
+<h3>
+🇸🇬 Singapore
+</h3>
+
+<h1>
+10K
+</h1>
+
+<p>
+1 Bulan 1 IP
+<br>
+Speed Premium
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+🇮🇩 Indonesia
+</h3>
+
+<h1>
+13K
+</h1>
+
+<p>
+1 Bulan 1 IP
+<br>
+Server Stabil
+</p>
+
+</div>
+
+
+
+<div class="card">
+
+<h3>
+VIP
+</h3>
+
+<h1>
+40K
+</h1>
+
+<p>
+Priority Server
+<br>
+Unlimited Speed
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="box" id="fitur">
+
+<h2>
+🔥 KEUNGGULAN
+</h2>
+
+
+<ul>
+
+<li>⚡ Koneksi cepat</li>
+
+<li>🔒 Aman dan stabil</li>
+
+<li>🎮 Support gaming</li>
+
+<li>📱 Android & iOS</li>
+
+<li>🕐 Support admin</li>
+
+</ul>
 
 
 </div>
@@ -257,17 +599,40 @@ Fast • Stable • Secure
 
 
 
-<center>
 
-<button>
-ORDER SEKARANG
-</button>
+<div class="box" id="order">
 
-</center>
+
+<h2>
+📞 ORDER SEKARANG
+</h2>
+
+
+<a class="btn" href="https://wa.me/62831006619">
+WhatsApp
+</a>
+
+
+<a class="btn" href="https://t.me/RONYARTCONFIG">
+Telegram
+</a>
+
+
+</div>
+
+
+
+<footer>
+
+© 2026 SANGGAR PREMIUM
+
+</footer>
+
 
 
 </div>
 
 
 </body>
+
 </html>
