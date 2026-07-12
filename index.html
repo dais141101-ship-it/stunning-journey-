@@ -4,157 +4,95 @@
 
 <title>SANGGAR PREMIUM</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <style>
 
-*{
-box-sizing:border-box;
+body{
+margin:0;
+background:#03000a;
+color:white;
 font-family:Arial,sans-serif;
 }
 
-body{
-margin:0;
-background:#050014;
-color:white;
-}
-
-
-nav{
+.container{
 padding:20px;
-text-align:center;
-background:#08001a;
-box-shadow:0 0 20px #ff00ff;
 }
 
-nav h2{
+.title{
+text-align:center;
+font-size:40px;
+font-weight:bold;
 color:#00ffff;
-font-size:28px;
-text-shadow:0 0 20px cyan;
+text-shadow:0 0 15px cyan,0 0 30px cyan;
+animation:blink 1.5s infinite alternate;
 }
 
-nav a{
-color:white;
-margin:10px;
-text-decoration:none;
-}
-
-
-
-.hero{
-padding:60px 20px;
+.sub{
 text-align:center;
-}
-
-
-.hero h1{
-font-size:60px;
-margin:0;
-text-shadow:0 0 20px #00ffff;
-}
-
-
-.hero span{
-color:#ff00ff;
-text-shadow:0 0 30px #ff00ff;
-}
-
-
-.hero p{
-font-size:22px;
+font-size:20px;
 color:#ddd;
 }
 
 
+.box{
+background:#090018;
+border:1px solid #ff00ff;
+border-radius:20px;
+padding:20px;
+margin:20px 0;
+box-shadow:
+0 0 20px #ff00ff;
+}
+
+
+h2{
+color:#ff00ff;
+text-shadow:0 0 15px magenta;
+}
+
+
+.server{
+color:#00ff88;
+font-weight:bold;
+}
+
+
+.price{
+font-size:20px;
+line-height:1.8;
+}
+
+
+b{
+color:#00ffff;
+font-size:22px;
+}
+
+
 button{
-padding:15px 35px;
-border:none;
+padding:15px 30px;
+border:0;
 border-radius:50px;
 background:linear-gradient(45deg,#00ffff,#ff00ff);
 color:white;
 font-weight:bold;
-box-shadow:0 0 20px #ff00ff;
+box-shadow:0 0 20px magenta;
 }
 
 
+@keyframes blink{
 
-section{
-padding:30px 20px;
-text-align:center;
+from{
+opacity:.6;
 }
 
-
-
-.box{
-background:#10052b;
-border:1px solid #00ffff;
-border-radius:20px;
-padding:25px;
-margin:20px auto;
-max-width:900px;
-box-shadow:0 0 20px #00ffff;
+to{
+opacity:1;
 }
 
-
-
-.server{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
 }
 
-
-
-.server div{
-background:#080019;
-padding:20px;
-border-radius:15px;
-border:1px solid #ff00ff;
-box-shadow:0 0 15px #ff00ff;
-width:250px;
-}
-
-
-
-.online{
-color:#00ff88;
-}
-
-
-
-.harga{
-display:flex;
-justify-content:center;
-gap:20px;
-flex-wrap:wrap;
-}
-
-
-
-.card{
-background:#0b0120;
-padding:25px;
-width:250px;
-border-radius:20px;
-border:1px solid cyan;
-box-shadow:0 0 20px cyan;
-}
-
-
-
-.card h1{
-color:#00ffff;
-font-size:45px;
-}
-
-
-
-footer{
-text-align:center;
-padding:30px;
-color:#aaa;
-}
 
 </style>
 
@@ -164,184 +102,156 @@ color:#aaa;
 <body>
 
 
-<nav>
-
-<h2>⚡ SANGGAR PREMIUM ⚡</h2>
-
-<a href="#server">Server</a>
-<a href="#harga">Harga</a>
-<a href="#order">Order</a>
-
-</nav>
+<div class="container">
 
 
-
-<section class="hero">
-
-<h1>
-SANGGAR<br>
-<span>PREMIUM</span>
-</h1>
+<div class="title">
+⚡ SANGGAR PREMIUM ⚡
+</div>
 
 
-<p>
+<p class="sub">
 VPN PREMIUM INDONESIA 🇮🇩 & SINGAPORE 🇸🇬
-</p>
-
-
-<p>
+<br>
 Fast • Stable • Secure
 </p>
 
+
+
+
+<div class="box">
+
+<h2>
+🌐 STATUS SERVER
+</h2>
+
+
+<p>
+🇮🇩 Indonesia
+<br>
+<span class="server">● ONLINE</span>
+</p>
+
+
+<p>
+🇸🇬 Singapore
+<br>
+<span class="server">● ONLINE</span>
+</p>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+💎 DAFTAR HARGA SINGAPORE
+</h2>
+
+
+<div class="price">
+
+
+» 1 Bulan = 1 IP : <b>10K</b><br>
+
+» 1 Bulan = 2 IP : <b>12K</b><br><br>
+
+
+» 2 Bulan = 1 IP : <b>17K</b><br>
+
+» 2 Bulan = 2 IP : <b>20K</b><br><br>
+
+
+» 3 Bulan = 2 IP : <b>30K</b><br>
+
+» 4 Bulan = 2 IP : <b>40K</b><br>
+
+» 1 Tahun = 2 IP : <b>100K</b>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+💎 DAFTAR HARGA INDONESIA
+</h2>
+
+
+<div class="price">
+
+
+» 1 Bulan = 1 IP : <b>13K</b><br>
+
+» 1 Bulan = 2 IP : <b>15K</b><br><br>
+
+
+» 2 Bulan = 1 IP : <b>23K</b><br>
+
+» 2 Bulan = 2 IP : <b>26K</b><br><br>
+
+
+» 3 Bulan = 2 IP : <b>40K</b><br>
+
+» 4 Bulan = 2 IP : <b>42K</b><br>
+
+» 1 Tahun = 2 IP : <b>130K</b>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="box">
+
+<h2>
+📢 INFO GARANSI
+</h2>
+
+
+<p>
+✓ 1 IP = 1 pengguna HP
+<br>
+✓ Config siap pakai
+<br>
+✓ Support error
+<br>
+✓ Bisa pindah config
+<br>
+✓ Fast respon admin
+</p>
+
+
+</div>
+
+
+
+
+<center>
 
 <button>
 ORDER SEKARANG
 </button>
 
-
-</section>
-
-
-
-
-<section id="server">
-
-<h2>🌐 STATUS SERVER</h2>
-
-
-<div class="server">
-
-
-<div>
-<h3>🇮🇩 Indonesia</h3>
-<p class="online">
-● ONLINE
-</p>
-<p>
-Low Ping<br>
-Speed Premium
-</p>
-</div>
-
-
-
-<div>
-<h3>🇸🇬 Singapore</h3>
-<p class="online">
-● ONLINE
-</p>
-<p>
-Fast Route Asia<br>
-Stable Connection
-</p>
-</div>
+</center>
 
 
 </div>
-
-</section>
-
-
-
-
-
-<section id="harga">
-
-<h2>💎 DAFTAR HARGA</h2>
-
-
-<div class="harga">
-
-
-<div class="card">
-
-<h3>INDO 7 HARI</h3>
-
-<h1>10K</h1>
-
-<p>
-1 Device<br>
-Low Ping<br>
-Support 24 Jam
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>INDO 30 HARI</h3>
-
-<h1>25K</h1>
-
-<p>
-Server Stabil<br>
-Speed Tinggi
-</p>
-
-</div>
-
-
-
-
-<div class="card">
-
-<h3>SG VIP</h3>
-
-<h1>40K</h1>
-
-<p>
-Priority Server<br>
-Unlimited Speed
-</p>
-
-</div>
-
-
-</div>
-
-</section>
-
-
-
-
-
-<section id="order">
-
-
-<div class="box">
-
-<h2>📞 ORDER</h2>
-
-<p>
-Hubungi Admin SANGGAR PREMIUM
-</p>
-
-<button>
-WHATSAPP
-</button>
-
-
-<button>
-TELEGRAM
-</button>
-
-
-</div>
-
-
-</section>
-
-
-
-
-<footer>
-
-© 2026 SANGGAR PREMIUM
-
-</footer>
 
 
 </body>
