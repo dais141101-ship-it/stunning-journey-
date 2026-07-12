@@ -7,7 +7,68 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <style>
+.card{
 
+animation:
+hargaNeon 2s infinite alternate;
+
+}
+
+
+@keyframes hargaNeon{
+
+from{
+
+box-shadow:
+0 0 15px cyan;
+
+}
+
+
+to{
+
+box-shadow:
+0 0 35px cyan,
+0 0 55px magenta;
+
+}
+
+}
+
+
+.card h1{
+
+text-shadow:
+
+0 0 10px cyan,
+0 0 25px magenta;
+
+animation:
+hargaText 1.5s infinite alternate;
+
+}
+
+
+@keyframes hargaText{
+
+from{
+
+text-shadow:
+0 0 10px cyan;
+
+}
+
+
+to{
+
+text-shadow:
+0 0 25px magenta,
+0 0 40px cyan;
+
+}
+
+}
+  
 *{
 box-sizing:border-box;
 font-family:Arial,sans-serif;
